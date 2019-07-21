@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | xiaoxiaozhang3&#39;s blog
+      队列 | xiaoxiaozhang3&#39;s blog
     
   </title>
   <meta name="author" content="xiaoxiaozhang3">
@@ -160,7 +160,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《Hello World》
+			当前文章&nbsp;:&nbsp;《队列》
 		
 	</p>
 
@@ -277,8 +277,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2019/07/21/使用队列来遍历目录/" itemprop="url">
+		队列
 	</a>
 
 	</div>
@@ -291,8 +291,8 @@
 
 	发布于
 
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		<time datetime="2019-07-21T07:41:15.845Z" itemprop="datePublished">
+	<a href="/2019/07/21/使用队列来遍历目录/" itemprop="url">
+		<time datetime="2019-07-21T02:38:30.000Z" itemprop="datePublished">
 	  		2019-07-21
 	  </time>
 	</a>
@@ -309,8 +309,8 @@
 
 	更新于
 
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		<time datetime="2019-07-21T07:41:15.845Z" itemprop="dateUpdated">
+	<a href="/2019/07/21/使用队列来遍历目录/" itemprop="url">
+		<time datetime="2019-07-21T02:38:30.000Z" itemprop="dateUpdated">
 	  		2019-07-21
 	  </time>
 	</a> 
@@ -320,7 +320,13 @@
 		</span>
 		<span>
 			<i class="fa fa-tags"></i>
-					
+			
+	
+		<a href="/tags/python基础/" class=" ">
+			python基础
+		</a>
+	
+		
 		</span>
 		
 		
@@ -330,19 +336,31 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+		<h1 id="使用队列来遍历目录"><a href="#使用队列来遍历目录" class="headerlink" title="使用队列来遍历目录"></a>使用队列来遍历目录</h1><a id="more"></a>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<pre><code class="python"><span class="keyword">import</span> collections
+<span class="keyword">import</span> os
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<span class="function"><span class="keyword">def</span> <span class="title">getAllDirQueue</span><span class="params">(path)</span>:</span>
+    <span class="comment"># 创建队列</span>
+    queue = collections.deque()
+    queue.append(path)
+    <span class="keyword">while</span> queue:
+        <span class="comment"># 出队</span>
+        filepath = queue.popleft()
+        fileList = os.listdir(filepath)
+        <span class="keyword">for</span> filename <span class="keyword">in</span> fileList:
+            absPath = os.path.join(filepath,filename)
+            <span class="keyword">if</span> os.path.isdir(absPath):
+                print(<span class="string">"目录："</span>,filename)
+                queue.append(absPath)
+            <span class="keyword">else</span>:
+                print(<span class="string">"文件："</span>,filename)
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<span class="comment">#输入路径</span>
+path = <span class="string">r"/Users/Pycharm"</span>
+getAllDirQueue(path)</code></pre>
 	
 	</div>
 	
@@ -361,8 +379,12 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
+			<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数" rel="prev">
+				&laquo;上一篇
+			</a>
 		
-			<a href="/2019/07/21/python输出及其运算/" title="python输出及其运算" rel="next">
+		
+			<a href="/2019/07/21/函数/" title="函数" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -440,62 +462,32 @@ list1 = list2 + list3
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
-								列表及其常用函数			
+							<a class="relate-post-title" href="/2019/07/21/使用栈来遍历目录/" title="栈">
+								栈			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
 								七月 21日, 2019				
 							</p>
 							<p class="relate-post-content">
-								列表及其常用函数1. 定义:有序的集合
-2.创建列表：
-列表名=[元素1，元素2，….]
+								使用栈来遍历目录
 
-元素：可以试任意类型元素与元素使用逗号隔开
-3.列表的操作1.列表的组合
-list1 = list2 + list3
-
-功能：将list1中的...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="列表及其常用函数"/>
-							</a>
-						</div>
-					</li>											
-			
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/使用队列来遍历目录/" title="队列">
-								队列			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								七月 21日, 2019				
-							</p>
-							<p class="relate-post-content">
-								使用队列来遍历目录
-
-import collections
 import os
 
 
-def getAllDirQueue(path):
-    # 创建队列
-    queue = collections.deque()
-    qu...
+def getdirstack(path):
+    # 创建一个栈
+    stack = []
+    # 先让根路径压栈
+    stack.append(path)
+    # 判断...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2019/07/21/使用队列来遍历目录/" title="队列">				
+							<a href="/2019/07/21/使用栈来遍历目录/" title="栈">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="队列"/>
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="栈"/>
 							</a>
 						</div>
 					</li>											
@@ -527,6 +519,37 @@ def getAllDirQueue(path):
 			
 					<li>
 						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
+								列表及其常用函数			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								列表及其常用函数1. 定义:有序的集合
+2.创建列表：
+列表名=[元素1，元素2，….]
+
+元素：可以试任意类型元素与元素使用逗号隔开
+3.列表的操作1.列表的组合
+list1 = list2 + list3
+
+功能：将list1中的...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="列表及其常用函数"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2019/07/21/os模块/" title="os模块">
 								os模块			
 							</a>
@@ -546,39 +569,6 @@ os.getcwd()功能：获取当前目录的绝对路径
 							<a href="/2019/07/21/os模块/" title="os模块">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="os模块"/>
-							</a>
-						</div>
-					</li>											
-			
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/使用栈来遍历目录/" title="栈">
-								栈			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								七月 21日, 2019				
-							</p>
-							<p class="relate-post-content">
-								使用栈来遍历目录
-
-import os
-
-
-def getdirstack(path):
-    # 创建一个栈
-    stack = []
-    # 先让根路径压栈
-    stack.append(path)
-    # 判断...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/07/21/使用栈来遍历目录/" title="栈">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="栈"/>
 							</a>
 						</div>
 					</li>											
@@ -662,6 +652,31 @@ str1.join(序列)
 							<a href="/2019/07/21/字符串/" title="字符串">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="字符串"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/07/21/歌词解析器/" title="歌词解析器">
+								歌词解析器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								python实现一个歌词解析器
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051import ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/07/21/歌词解析器/" title="歌词解析器">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="歌词解析器"/>
 							</a>
 						</div>
 					</li>											

@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | xiaoxiaozhang3&#39;s blog
+      函数 | xiaoxiaozhang3&#39;s blog
     
   </title>
   <meta name="author" content="xiaoxiaozhang3">
@@ -160,7 +160,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《Hello World》
+			当前文章&nbsp;:&nbsp;《函数》
 		
 	</p>
 
@@ -277,8 +277,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2019/07/21/函数/" itemprop="url">
+		函数
 	</a>
 
 	</div>
@@ -291,8 +291,8 @@
 
 	发布于
 
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		<time datetime="2019-07-21T07:41:15.845Z" itemprop="datePublished">
+	<a href="/2019/07/21/函数/" itemprop="url">
+		<time datetime="2019-07-21T02:38:30.000Z" itemprop="datePublished">
 	  		2019-07-21
 	  </time>
 	</a>
@@ -309,8 +309,8 @@
 
 	更新于
 
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		<time datetime="2019-07-21T07:41:15.845Z" itemprop="dateUpdated">
+	<a href="/2019/07/21/函数/" itemprop="url">
+		<time datetime="2019-07-21T02:38:30.000Z" itemprop="dateUpdated">
 	  		2019-07-21
 	  </time>
 	</a> 
@@ -320,7 +320,13 @@
 		</span>
 		<span>
 			<i class="fa fa-tags"></i>
-					
+			
+	
+		<a href="/tags/python基础/" class=" ">
+			python基础
+		</a>
+	
+		
 		</span>
 		
 		
@@ -330,19 +336,33 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+		<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="函数参数："><a href="#函数参数：" class="headerlink" title="函数参数："></a>函数参数：</h2><h3 id="1-位置参数又称必选参数"><a href="#1-位置参数又称必选参数" class="headerlink" title="1.位置参数又称必选参数"></a>1.位置参数又称必选参数</h3><p>传递参数的时候，必须按照函数定义的顺序以及个数来进行传参。</p>
+<h3 id="2-关键字参数"><a href="#2-关键字参数" class="headerlink" title="2.关键字参数"></a>2.关键字参数</h3><p>指传递参数的过程中，通过键值对的方式直接给形参指定具体的值，使用这种方式进行传参，可以清除位置关系<br>关键字参数与位置参数<br>可以同时存在，但是，若同时存在的时候，位置参数要写在前面<br>关键字参数要写在后面。</p>
+<p>写在参数列表前面的形参若需使用关键字传参，<br>那么后面的参数一定也要使用关键字传参</p>
+<a id="more"></a>
+<h3 id="3-默认参数"><a href="#3-默认参数" class="headerlink" title="3.默认参数"></a>3.默认参数</h3><p>在定义函数的时候，我们可以给我们的函数提供一个默认值，若需要更改的时候，<br>我们传递该参数，若不需要更改的时候，我们不传递，若不传递，则使用提供默认值。</p>
+<h3 id="4-不定长参数"><a href="#4-不定长参数" class="headerlink" title="4.不定长参数"></a>4.不定长参数</h3><p>定义函数的时候，有时候不知道用户要传递多少个参数进来，此时，我们可以使用不定长<br>参数来进行处理<br>特点：<br>能够处理比声明的更多的参数，传递多少参数，则处理多少参数，不传递则不处理。<br>包裹位置参数<br>收集除位置参数之外的剩余的必选参数，作为元组来进行处理。<br>使用包裹位置参数的时候，定义的时候只需要在形参前面添加一个<em>即可。<br>一般情况下使用</em> **args</p>
+<p>若位置参数与包裹位置参数同时存在的情况下，<br>我们需要将包裹位置参数写在位置参数的后面</p>
+<p>包裹关键字参数<br>收集除位置参数，以及默认参数以外剩余的关键字参数，作为字典来进行处理<br>定义包裹关键字参数的时候使用**<br>一般使用**kwargs</p>
+<p>若在python定义函数的过程中，位置参数，默认参数，包裹位置参数以及包裹关键字<br>参数同时存在的情况下，<br>一般情况下顺序：位置参数，默认参数，包裹位置参数，包裹关键字参数<br>当然，默认参数与包裹位置参数之间顺序可以调换</p>
+<h2 id="万能参数"><a href="#万能参数" class="headerlink" title="万能参数"></a>万能参数</h2><blockquote>
+<p>def func(<em>args,*</em>kwargs):<br> pass</p>
+</blockquote>
+<h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><p>概念：指的是一类无需定义标识符的函数或者子程序<br>优点：没有名字，所以不会引起函数名冲突</p>
+<h3 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h3><p>lambda 参数列表: 表达式</p>
+<p>1.lambda只是一个表达式，函数体非常简单<br>2.lambda 匿名函数<br>参数与参数之间使用逗号隔开，冒号不能省略<br>3.表达式只能有一条语句，此函数无需return，表达式的结果就是函数的返回值</p>
+<h3 id="调用匿名函数："><a href="#调用匿名函数：" class="headerlink" title="调用匿名函数："></a>调用匿名函数：</h3><p>将lambda表达式赋值给一个变量，通过调用这个变量来进行调用此匿名函数。</p>
+<p>匿名函数适用于比较简单一些运算。</p>
+<h2 id="偏函数"><a href="#偏函数" class="headerlink" title="偏函数"></a>偏函数</h2><p>将函数中的某些参数给固定住，然后返回一个新的函数，<br>调用新的函数会更加的方便。<br>作用：方便函数的调用。<br>偏函数是functools模块中提供的一个功能。</p>
+<blockquote>
+<p>functools.partial(func,要固定参数)</p>
+</blockquote>
+<p>参数一：被固定的函数的函数名<br>参数二：要固定的参数，可以以键值对的方式传参也可以以位置参数传参</p>
+<p>功能：相等于给某个函数设置默认值，调用函数的时候会更加的方便。</p>
+<h2 id="回调函数："><a href="#回调函数：" class="headerlink" title="回调函数："></a>回调函数：</h2><p>将函数作为参数传递到另外一个函数中，这个被传递进去后来又<br>被调用的函数我们称之为回调函数</p>
+<h2 id="递归函数："><a href="#递归函数：" class="headerlink" title="递归函数："></a>递归函数：</h2><p>函数的内部可以调用其他的函数，但是若调用的这个函数正好是他自己本身的时候，<br>我们称这个函数为递归函数。</p>
+<p>不建议使用递归<br>1.考虑栈溢出<br>2.递归性能不如循环</p>
+<p>思路：<br>1.写出临界条件<br>2.找出这次与上次的关系<br>3.假设此函数已经可以使用，通过上次的结果计算本次的结果</p>
 	
 	</div>
 	
@@ -361,8 +381,12 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
+			<a href="/2019/07/21/使用队列来遍历目录/" title="队列" rel="prev">
+				&laquo;上一篇
+			</a>
 		
-			<a href="/2019/07/21/python输出及其运算/" title="python输出及其运算" rel="next">
+		
+			<a href="/2019/07/21/os模块/" title="os模块" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -440,30 +464,32 @@ list1 = list2 + list3
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
-								列表及其常用函数			
+							<a class="relate-post-title" href="/2019/07/21/使用栈来遍历目录/" title="栈">
+								栈			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
 								七月 21日, 2019				
 							</p>
 							<p class="relate-post-content">
-								列表及其常用函数1. 定义:有序的集合
-2.创建列表：
-列表名=[元素1，元素2，….]
+								使用栈来遍历目录
 
-元素：可以试任意类型元素与元素使用逗号隔开
-3.列表的操作1.列表的组合
-list1 = list2 + list3
+import os
 
-功能：将list1中的...
+
+def getdirstack(path):
+    # 创建一个栈
+    stack = []
+    # 先让根路径压栈
+    stack.append(path)
+    # 判断...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">				
+							<a href="/2019/07/21/使用栈来遍历目录/" title="栈">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="列表及其常用函数"/>
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="栈"/>
 							</a>
 						</div>
 					</li>											
@@ -503,23 +529,30 @@ def getAllDirQueue(path):
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/函数/" title="函数">
-								函数			
+							<a class="relate-post-title" href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
+								列表及其常用函数			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
 								七月 21日, 2019				
 							</p>
 							<p class="relate-post-content">
-								函数函数参数：1.位置参数又称必选参数传递参数的时候，必须按照函数定义的顺序以及个数来进行传参。
-2.关键字参数指传递参数的过程中，通过键值对的方式直接给形参指定具体的值，使用这种方式进行传参，可以清除位置关系关键字参数与位置参数可以...
+								列表及其常用函数1. 定义:有序的集合
+2.创建列表：
+列表名=[元素1，元素2，….]
+
+元素：可以试任意类型元素与元素使用逗号隔开
+3.列表的操作1.列表的组合
+list1 = list2 + list3
+
+功能：将list1中的...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2019/07/21/函数/" title="函数">				
+							<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="函数"/>
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="列表及其常用函数"/>
 							</a>
 						</div>
 					</li>											
@@ -546,39 +579,6 @@ os.getcwd()功能：获取当前目录的绝对路径
 							<a href="/2019/07/21/os模块/" title="os模块">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="os模块"/>
-							</a>
-						</div>
-					</li>											
-			
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/使用栈来遍历目录/" title="栈">
-								栈			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								七月 21日, 2019				
-							</p>
-							<p class="relate-post-content">
-								使用栈来遍历目录
-
-import os
-
-
-def getdirstack(path):
-    # 创建一个栈
-    stack = []
-    # 先让根路径压栈
-    stack.append(path)
-    # 判断...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/07/21/使用栈来遍历目录/" title="栈">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="栈"/>
 							</a>
 						</div>
 					</li>											
@@ -662,6 +662,31 @@ str1.join(序列)
 							<a href="/2019/07/21/字符串/" title="字符串">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="字符串"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/07/21/歌词解析器/" title="歌词解析器">
+								歌词解析器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								python实现一个歌词解析器
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051import ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/07/21/歌词解析器/" title="歌词解析器">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="歌词解析器"/>
 							</a>
 						</div>
 					</li>											

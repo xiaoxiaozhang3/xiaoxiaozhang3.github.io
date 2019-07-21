@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | xiaoxiaozhang3&#39;s blog
+      字典 | xiaoxiaozhang3&#39;s blog
     
   </title>
   <meta name="author" content="xiaoxiaozhang3">
@@ -160,7 +160,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《Hello World》
+			当前文章&nbsp;:&nbsp;《字典》
 		
 	</p>
 
@@ -277,8 +277,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2019/07/21/字典/" itemprop="url">
+		字典
 	</a>
 
 	</div>
@@ -291,8 +291,8 @@
 
 	发布于
 
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		<time datetime="2019-07-21T07:41:15.845Z" itemprop="datePublished">
+	<a href="/2019/07/21/字典/" itemprop="url">
+		<time datetime="2019-07-21T02:38:30.000Z" itemprop="datePublished">
 	  		2019-07-21
 	  </time>
 	</a>
@@ -309,8 +309,8 @@
 
 	更新于
 
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		<time datetime="2019-07-21T07:41:15.845Z" itemprop="dateUpdated">
+	<a href="/2019/07/21/字典/" itemprop="url">
+		<time datetime="2019-07-21T02:38:30.000Z" itemprop="dateUpdated">
 	  		2019-07-21
 	  </time>
 	</a> 
@@ -320,7 +320,13 @@
 		</span>
 		<span>
 			<i class="fa fa-tags"></i>
-					
+			
+	
+		<a href="/tags/python基础/" class=" ">
+			python基础
+		</a>
+	
+		
 		</span>
 		
 		
@@ -330,19 +336,44 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+		<h2 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h2><p>采用键（key）值（value）对的方式存储的<br>本质：是一个无序的集合</p>
+<h3 id="字典中key的特性："><a href="#字典中key的特性：" class="headerlink" title="字典中key的特性："></a>字典中key的特性：</h3><p>1.key不能重复<br>key即使重复不会报错，后写的将前写的覆盖<br>2.key必须是不可变的类型<br>若使用可变类型做key，则报错</p>
+<p>不可变类型 number,str,tuple<br>可变类型：list,set,dict</p>
+<h3 id="字典的创建："><a href="#字典的创建：" class="headerlink" title="字典的创建："></a>字典的创建：</h3><blockquote>
+<p>dict1 = {key1:value1,key2:value2…}</p>
+</blockquote>
+<p>key与key之间用逗号隔开，key与value使用冒号连接</p>
+<h3 id="字典的访问"><a href="#字典的访问" class="headerlink" title="字典的访问:"></a>字典的访问:</h3><p>字典名[key]<br>若key不存在则报错</p>
+<blockquote>
+<p>字典名.get(key)</p>
+</blockquote>
+<p>功能：通过key访问value，若key不存在则返回None</p>
+<h3 id="添加-更改元素"><a href="#添加-更改元素" class="headerlink" title="添加/更改元素"></a>添加/更改元素</h3><blockquote>
+<p>字典名[key] = value</p>
+</blockquote>
+<p>若keu存在的时候，更改元素，若key不存在则添加元素</p>
+<h3 id="删除字典"><a href="#删除字典" class="headerlink" title="删除字典"></a>删除字典</h3><blockquote>
+<p>字典名.pop(key)</p>
+</blockquote>
+<h3 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h3><blockquote>
+<p>字典名.copy()</p>
+</blockquote>
+<h3 id="打碎插入"><a href="#打碎插入" class="headerlink" title="打碎插入"></a>打碎插入</h3><p>字典名.update(字典2)</p>
+<h3 id="字典的遍历"><a href="#字典的遍历" class="headerlink" title="字典的遍历"></a>字典的遍历</h3><p>直接使用for循环遍历字典，默认遍历key值</p>
+<blockquote>
+<p>字典名.value()</p>
+</blockquote>
+<p>获取所有的value</p>
+<blockquote>
+<p>字典名.key()</p>
+</blockquote>
+<p>获取所有的key值</p>
+<blockquote>
+<p>字典名.items()</p>
+</blockquote>
+<p>获取所有的key和value</p>
+<h3 id="字典和列表的区别于联系"><a href="#字典和列表的区别于联系" class="headerlink" title="字典和列表的区别于联系"></a>字典和列表的区别于联系</h3><h4 id="联系"><a href="#联系" class="headerlink" title="联系"></a>联系</h4><p>它们都是集合，都是用来存储数据的</p>
+<h4 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h4><p>1.字典以键值对的方式存储，列表只存储了字典中value<br>2.字典是无序的，列表是有序的<br>3.访问字典的时候使用key来进行访问，访问列表的时候使用下标<br>4.字典的查找与插入速度比较快，当数据量较大的时候，list1的查找速度会明显变慢<br>5.字典存储需要占用大量的空间，字典不但要存储value还需要存储key，字典内部的排列是不紧密的<br>list1只需要存储value，并且内部排列是紧密的</p>
 	
 	</div>
 	
@@ -361,8 +392,12 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
+			<a href="/2019/07/21/判断字符串是否合法/" title="字符串的使用" rel="prev">
+				&laquo;上一篇
+			</a>
 		
-			<a href="/2019/07/21/python输出及其运算/" title="python输出及其运算" rel="next">
+		
+			<a href="/2019/07/21/字符串/" title="字符串" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -440,30 +475,32 @@ list1 = list2 + list3
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
-								列表及其常用函数			
+							<a class="relate-post-title" href="/2019/07/21/使用栈来遍历目录/" title="栈">
+								栈			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
 								七月 21日, 2019				
 							</p>
 							<p class="relate-post-content">
-								列表及其常用函数1. 定义:有序的集合
-2.创建列表：
-列表名=[元素1，元素2，….]
+								使用栈来遍历目录
 
-元素：可以试任意类型元素与元素使用逗号隔开
-3.列表的操作1.列表的组合
-list1 = list2 + list3
+import os
 
-功能：将list1中的...
+
+def getdirstack(path):
+    # 创建一个栈
+    stack = []
+    # 先让根路径压栈
+    stack.append(path)
+    # 判断...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">				
+							<a href="/2019/07/21/使用栈来遍历目录/" title="栈">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="列表及其常用函数"/>
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="栈"/>
 							</a>
 						</div>
 					</li>											
@@ -527,6 +564,37 @@ def getAllDirQueue(path):
 			
 					<li>
 						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
+								列表及其常用函数			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								列表及其常用函数1. 定义:有序的集合
+2.创建列表：
+列表名=[元素1，元素2，….]
+
+元素：可以试任意类型元素与元素使用逗号隔开
+3.列表的操作1.列表的组合
+list1 = list2 + list3
+
+功能：将list1中的...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="列表及其常用函数"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2019/07/21/os模块/" title="os模块">
 								os模块			
 							</a>
@@ -546,39 +614,6 @@ os.getcwd()功能：获取当前目录的绝对路径
 							<a href="/2019/07/21/os模块/" title="os模块">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="os模块"/>
-							</a>
-						</div>
-					</li>											
-			
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/使用栈来遍历目录/" title="栈">
-								栈			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								七月 21日, 2019				
-							</p>
-							<p class="relate-post-content">
-								使用栈来遍历目录
-
-import os
-
-
-def getdirstack(path):
-    # 创建一个栈
-    stack = []
-    # 先让根路径压栈
-    stack.append(path)
-    # 判断...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/07/21/使用栈来遍历目录/" title="栈">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="栈"/>
 							</a>
 						</div>
 					</li>											
@@ -612,31 +647,6 @@ def getdirstack(path):
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/字典/" title="字典">
-								字典			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								七月 21日, 2019				
-							</p>
-							<p class="relate-post-content">
-								字典采用键（key）值（value）对的方式存储的本质：是一个无序的集合
-字典中key的特性：1.key不能重复key即使重复不会报错，后写的将前写的覆盖2.key必须是不可变的类型若使用可变类型做key，则报错
-不可变类型 numb...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/07/21/字典/" title="字典">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="字典"/>
-							</a>
-						</div>
-					</li>											
-			
-			
-					<li>
-						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2019/07/21/字符串/" title="字符串">
 								字符串			
 							</a>
@@ -662,6 +672,31 @@ str1.join(序列)
 							<a href="/2019/07/21/字符串/" title="字符串">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="字符串"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/07/21/歌词解析器/" title="歌词解析器">
+								歌词解析器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								python实现一个歌词解析器
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051import ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/07/21/歌词解析器/" title="歌词解析器">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="歌词解析器"/>
 							</a>
 						</div>
 					</li>											

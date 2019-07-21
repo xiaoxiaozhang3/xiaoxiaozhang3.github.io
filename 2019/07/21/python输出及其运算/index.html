@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | xiaoxiaozhang3&#39;s blog
+      python输出及其运算 | xiaoxiaozhang3&#39;s blog
     
   </title>
   <meta name="author" content="xiaoxiaozhang3">
@@ -160,7 +160,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《Hello World》
+			当前文章&nbsp;:&nbsp;《python输出及其运算》
 		
 	</p>
 
@@ -277,8 +277,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2019/07/21/python输出及其运算/" itemprop="url">
+		python输出及其运算
 	</a>
 
 	</div>
@@ -291,8 +291,8 @@
 
 	发布于
 
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		<time datetime="2019-07-21T07:41:15.845Z" itemprop="datePublished">
+	<a href="/2019/07/21/python输出及其运算/" itemprop="url">
+		<time datetime="2019-07-21T06:50:30.000Z" itemprop="datePublished">
 	  		2019-07-21
 	  </time>
 	</a>
@@ -309,8 +309,8 @@
 
 	更新于
 
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		<time datetime="2019-07-21T07:41:15.845Z" itemprop="dateUpdated">
+	<a href="/2019/07/21/python输出及其运算/" itemprop="url">
+		<time datetime="2019-07-21T06:50:30.000Z" itemprop="dateUpdated">
 	  		2019-07-21
 	  </time>
 	</a> 
@@ -320,7 +320,13 @@
 		</span>
 		<span>
 			<i class="fa fa-tags"></i>
-					
+			
+	
+		<a href="/tags/python基础/" class=" ">
+			python基础
+		</a>
+	
+		
 		</span>
 		
 		
@@ -330,19 +336,26 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+		<h2 id="格式化输出"><a href="#格式化输出" class="headerlink" title="格式化输出"></a>格式化输出</h2><p>%s 字符串<br>%ns n代表字符串占据的宽度<br>%-ns -代表左对齐，默认为右对齐</p>
+<p>%d int类型<br>%02d  0:占位符  2:长度</p>
+<p>%f  浮点型<br>%nf 小数点后保留的位数</p>
+<h2 id="分支语句"><a href="#分支语句" class="headerlink" title="分支语句"></a>分支语句</h2><h4 id="单分支"><a href="#单分支" class="headerlink" title="单分支"></a>单分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if 判断条件:</span><br><span class="line">      语句</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h4 id="双分支"><a href="#双分支" class="headerlink" title="双分支"></a>双分支</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> 判断条件:</span><br><span class="line">    语句块<span class="number">1</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   语句块<span class="number">2</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h4 id="多分支"><a href="#多分支" class="headerlink" title="多分支"></a>多分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">if 判断条件1:</span><br><span class="line">      语句块1</span><br><span class="line">elif:</span><br><span class="line">    语句块2</span><br><span class="line">...</span><br><span class="line">else:</span><br><span class="line">    语句块n</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h2 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h2><h3 id="身份运算"><a href="#身份运算" class="headerlink" title="身份运算"></a>身份运算</h3><p>is 判断两个标识符是否引用同一个对象，若是返回True，否则返回False<br>not is </p>
+<h3 id="成员运算"><a href="#成员运算" class="headerlink" title="成员运算"></a>成员运算</h3><p>in 判断指定的元素是否存在于指定的序列中，若存在则返回True，不存在则返回False<br> not in</p>
+<h3 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h3><p>&amp; 按位与<br>| 按位或<br>^ 按位异或<br>~ 按位取反<br>&lt;&lt; 左移</p>
+<p>特别注意使用位运算的时候一定要将数值转为2进制来计算</p>
+<h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><p>and 与运算 全真则真，一假则假<br>or 或运算 一真则真，全假则假<br>not 非运算 真变假，假变真</p>
+<p>注意：使用and来连接的时候，若有一个表达式的结果为假，则后面的表达式不再进行运算直接返回假<br>使用or来连接的时候，若有一个表达式的结果为真时，则后面的表达式不再运算直接返回真<br>优先级:( ) &gt; not &gt; and &gt;or</p>
+<h3 id="比较运算"><a href="#比较运算" class="headerlink" title="比较运算"></a>比较运算</h3><p>== 等于<br>!= 不等于</p>
+<blockquote>
+<p>大于<br>&lt; 小于<br>= 大于等于<br>&lt;= 小于等于<br>使用比较运算符时，得到的时一个bool值</p>
+</blockquote>
+<h3 id="赋值运算"><a href="#赋值运算" class="headerlink" title="赋值运算"></a>赋值运算</h3><p>+=  -= <em>= /= %= *</em>= //=<br>注意：使用赋值运算的时候，卸载等号左边的变量的值会发生变化，写在等号右边的值不发生变化，只参与运算</p>
 	
 	</div>
 	
@@ -361,8 +374,12 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
+			<a href="/2019/07/21/hello-world/" title="Hello World" rel="prev">
+				&laquo;上一篇
+			</a>
 		
-			<a href="/2019/07/21/python输出及其运算/" title="python输出及其运算" rel="next">
+		
+			<a href="/2019/07/21/列表及其常用函数/" title="列表及其常用方法" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -380,32 +397,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/python输出及其运算/" title="python输出及其运算">
-								python输出及其运算			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								七月 21日, 2019				
-							</p>
-							<p class="relate-post-content">
-								格式化输出%s 字符串%ns n代表字符串占据的宽度%-ns -代表左对齐，默认为右对齐
-%d int类型%02d  0:占位符  2:长度
-%f  浮点型%nf 小数点后保留的位数
-分支语句单分支12if 判断条件:      语句...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/07/21/python输出及其运算/" title="python输出及其运算">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="python输出及其运算"/>
-							</a>
-						</div>
-					</li>											
-			
 			
 					<li>
 						<div class="relate-post-text">
@@ -440,30 +431,32 @@ list1 = list2 + list3
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
-								列表及其常用函数			
+							<a class="relate-post-title" href="/2019/07/21/使用栈来遍历目录/" title="栈">
+								栈			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
 								七月 21日, 2019				
 							</p>
 							<p class="relate-post-content">
-								列表及其常用函数1. 定义:有序的集合
-2.创建列表：
-列表名=[元素1，元素2，….]
+								使用栈来遍历目录
 
-元素：可以试任意类型元素与元素使用逗号隔开
-3.列表的操作1.列表的组合
-list1 = list2 + list3
+import os
 
-功能：将list1中的...
+
+def getdirstack(path):
+    # 创建一个栈
+    stack = []
+    # 先让根路径压栈
+    stack.append(path)
+    # 判断...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">				
+							<a href="/2019/07/21/使用栈来遍历目录/" title="栈">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="列表及其常用函数"/>
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="栈"/>
 							</a>
 						</div>
 					</li>											
@@ -527,6 +520,37 @@ def getAllDirQueue(path):
 			
 					<li>
 						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
+								列表及其常用函数			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								列表及其常用函数1. 定义:有序的集合
+2.创建列表：
+列表名=[元素1，元素2，….]
+
+元素：可以试任意类型元素与元素使用逗号隔开
+3.列表的操作1.列表的组合
+list1 = list2 + list3
+
+功能：将list1中的...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="列表及其常用函数"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2019/07/21/os模块/" title="os模块">
 								os模块			
 							</a>
@@ -546,39 +570,6 @@ os.getcwd()功能：获取当前目录的绝对路径
 							<a href="/2019/07/21/os模块/" title="os模块">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="os模块"/>
-							</a>
-						</div>
-					</li>											
-			
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/使用栈来遍历目录/" title="栈">
-								栈			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								七月 21日, 2019				
-							</p>
-							<p class="relate-post-content">
-								使用栈来遍历目录
-
-import os
-
-
-def getdirstack(path):
-    # 创建一个栈
-    stack = []
-    # 先让根路径压栈
-    stack.append(path)
-    # 判断...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/07/21/使用栈来遍历目录/" title="栈">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="栈"/>
 							</a>
 						</div>
 					</li>											
@@ -662,6 +653,31 @@ str1.join(序列)
 							<a href="/2019/07/21/字符串/" title="字符串">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="字符串"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/07/21/歌词解析器/" title="歌词解析器">
+								歌词解析器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								python实现一个歌词解析器
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051import ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/07/21/歌词解析器/" title="歌词解析器">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="歌词解析器"/>
 							</a>
 						</div>
 					</li>											

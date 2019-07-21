@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | xiaoxiaozhang3&#39;s blog
+      os模块 | xiaoxiaozhang3&#39;s blog
     
   </title>
   <meta name="author" content="xiaoxiaozhang3">
@@ -160,7 +160,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《Hello World》
+			当前文章&nbsp;:&nbsp;《os模块》
 		
 	</p>
 
@@ -277,8 +277,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2019/07/21/os模块/" itemprop="url">
+		os模块
 	</a>
 
 	</div>
@@ -291,8 +291,8 @@
 
 	发布于
 
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		<time datetime="2019-07-21T07:41:15.845Z" itemprop="datePublished">
+	<a href="/2019/07/21/os模块/" itemprop="url">
+		<time datetime="2019-07-21T02:38:30.000Z" itemprop="datePublished">
 	  		2019-07-21
 	  </time>
 	</a>
@@ -309,8 +309,8 @@
 
 	更新于
 
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		<time datetime="2019-07-21T07:41:15.845Z" itemprop="dateUpdated">
+	<a href="/2019/07/21/os模块/" itemprop="url">
+		<time datetime="2019-07-21T02:38:30.000Z" itemprop="dateUpdated">
 	  		2019-07-21
 	  </time>
 	</a> 
@@ -320,7 +320,13 @@
 		</span>
 		<span>
 			<i class="fa fa-tags"></i>
-					
+			
+	
+		<a href="/tags/python基础/" class=" ">
+			python基础
+		</a>
+	
+		
 		</span>
 		
 		
@@ -330,19 +336,28 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+		<h1 id="os模块"><a href="#os模块" class="headerlink" title="os模块"></a>os模块</h1><p>os模块是一个python内置的文件模块</p>
+<h2 id="os模块的使用"><a href="#os模块的使用" class="headerlink" title="os模块的使用"></a>os模块的使用</h2><p><code>import os</code></p>
+<p><code>os.getcwd()</code><br>功能：获取当前目录的绝对路径</p>
+<p>绝对路径：<br>window：以盘符开头，或者以\开头<br>linux：以/开头或者以~开头<br>相对路径：<br>window：以文件开头，以./开头 或者../开头<br>linux：与window相同</p>
+<a id="more"></a>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p><code>os.listdir(path)</code><br>功能：显示指定路径下所有的文件名以及目录名，若path不指定，默认当前目录下。</p>
+<p><code>os.path.abspath(path)</code><br>功能：将指定的路径拼接到当前所在所在的路径下</p>
+<p><code>os.path.split(path)</code><br>功能：返回指定路径目录部分以及文件部分<br>本质：以最后一个/来进行切分，返回两个值，前面的就是目录部分，后面的就是文件部分<br>若是”.”切分到文件部分去</p>
+<p><code>os.path.dirname(path)</code><br>功能：返回指定路径的目录部分</p>
+<p><code>os.path.basename(path)</code><br>功能：返回指定路径的文件部分</p>
+<p><code>os.path.join(path,paths)</code><br>功能:对路径进行拼接处理<br>paths：可以接收多个路径<br>若paths存在绝对路径，前面路径则不保留。</p>
+<p><code>os.path.getsize(path)</code><br>功能:获取指定路径文件的大小【目录的大小获取不到】</p>
+<p><code>os.path.exists(path)</code><br>功能：判断指定的路径是否存在，若存在则返回True，否则返回False</p>
+<p><code>os.path.isdir(path)</code><br>功能：判断该路径是否为目录，若是返回True，否则返回False</p>
+<p><code>os.path.isfile(path)</code><br>功能：判断指定的路径是否为文件，若是则返回True，否则返回False</p>
+<p><code>os.remove(path)</code><br>功能:删除指定的路径的文件</p>
+<p><code>os.mkdir(path)</code><br>功能：创建指定的目录</p>
+<p><code>os.makedirs(path)</code><br>功能：递归创建多个目录</p>
+<p><code>os.rmdir(path)</code><br>功能：删除指定的空目录</p>
+<p><code>os.removedirs(path)</code><br>功能：递归删除目录</p>
+<p><code>os.chdir(path)</code><br>功能：切换目录</p>
 	
 	</div>
 	
@@ -361,8 +376,12 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
+			<a href="/2019/07/21/函数/" title="函数" rel="prev">
+				&laquo;上一篇
+			</a>
 		
-			<a href="/2019/07/21/python输出及其运算/" title="python输出及其运算" rel="next">
+		
+			<a href="/2019/07/21/使用栈来遍历目录/" title="栈" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -440,30 +459,32 @@ list1 = list2 + list3
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
-								列表及其常用函数			
+							<a class="relate-post-title" href="/2019/07/21/使用栈来遍历目录/" title="栈">
+								栈			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
 								七月 21日, 2019				
 							</p>
 							<p class="relate-post-content">
-								列表及其常用函数1. 定义:有序的集合
-2.创建列表：
-列表名=[元素1，元素2，….]
+								使用栈来遍历目录
 
-元素：可以试任意类型元素与元素使用逗号隔开
-3.列表的操作1.列表的组合
-list1 = list2 + list3
+import os
 
-功能：将list1中的...
+
+def getdirstack(path):
+    # 创建一个栈
+    stack = []
+    # 先让根路径压栈
+    stack.append(path)
+    # 判断...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">				
+							<a href="/2019/07/21/使用栈来遍历目录/" title="栈">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="列表及其常用函数"/>
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="栈"/>
 							</a>
 						</div>
 					</li>											
@@ -527,58 +548,30 @@ def getAllDirQueue(path):
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/os模块/" title="os模块">
-								os模块			
+							<a class="relate-post-title" href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
+								列表及其常用函数			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
 								七月 21日, 2019				
 							</p>
 							<p class="relate-post-content">
-								os模块os模块是一个python内置的文件模块
-os模块的使用import os
-os.getcwd()功能：获取当前目录的绝对路径
-绝对路径：window：以盘符开头，或者以\开头linux：以/开头或者以~开头相对路径：wind...
+								列表及其常用函数1. 定义:有序的集合
+2.创建列表：
+列表名=[元素1，元素2，….]
+
+元素：可以试任意类型元素与元素使用逗号隔开
+3.列表的操作1.列表的组合
+list1 = list2 + list3
+
+功能：将list1中的...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2019/07/21/os模块/" title="os模块">				
+							<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="os模块"/>
-							</a>
-						</div>
-					</li>											
-			
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/使用栈来遍历目录/" title="栈">
-								栈			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								七月 21日, 2019				
-							</p>
-							<p class="relate-post-content">
-								使用栈来遍历目录
-
-import os
-
-
-def getdirstack(path):
-    # 创建一个栈
-    stack = []
-    # 先让根路径压栈
-    stack.append(path)
-    # 判断...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/07/21/使用栈来遍历目录/" title="栈">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="栈"/>
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="列表及其常用函数"/>
 							</a>
 						</div>
 					</li>											
@@ -662,6 +655,31 @@ str1.join(序列)
 							<a href="/2019/07/21/字符串/" title="字符串">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="字符串"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/07/21/歌词解析器/" title="歌词解析器">
+								歌词解析器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								python实现一个歌词解析器
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051import ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/07/21/歌词解析器/" title="歌词解析器">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="歌词解析器"/>
 							</a>
 						</div>
 					</li>											

@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | xiaoxiaozhang3&#39;s blog
+      歌词解析器 | xiaoxiaozhang3&#39;s blog
     
   </title>
   <meta name="author" content="xiaoxiaozhang3">
@@ -160,7 +160,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《Hello World》
+			当前文章&nbsp;:&nbsp;《歌词解析器》
 		
 	</p>
 
@@ -277,8 +277,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2019/07/21/歌词解析器/" itemprop="url">
+		歌词解析器
 	</a>
 
 	</div>
@@ -291,8 +291,8 @@
 
 	发布于
 
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		<time datetime="2019-07-21T07:41:15.845Z" itemprop="datePublished">
+	<a href="/2019/07/21/歌词解析器/" itemprop="url">
+		<time datetime="2019-07-21T02:38:30.000Z" itemprop="datePublished">
 	  		2019-07-21
 	  </time>
 	</a>
@@ -309,8 +309,8 @@
 
 	更新于
 
-	<a href="/2019/07/21/hello-world/" itemprop="url">
-		<time datetime="2019-07-21T07:41:15.845Z" itemprop="dateUpdated">
+	<a href="/2019/07/21/歌词解析器/" itemprop="url">
+		<time datetime="2019-07-21T02:38:30.000Z" itemprop="dateUpdated">
 	  		2019-07-21
 	  </time>
 	</a> 
@@ -320,7 +320,13 @@
 		</span>
 		<span>
 			<i class="fa fa-tags"></i>
-					
+			
+	
+		<a href="/tags/python基础/" class=" ">
+			python基础
+		</a>
+	
+		
 		</span>
 		
 		
@@ -330,20 +336,9 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+		<h3 id="python实现一个歌词解析器"><a href="#python实现一个歌词解析器" class="headerlink" title="python实现一个歌词解析器"></a>python实现一个歌词解析器</h3><a id="more"></a>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-	
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getMusicDict</span><span class="params">(musicLrc)</span>:</span></span><br><span class="line">    musicDict = &#123;&#125;</span><br><span class="line">    mList = musicLrc.strip().splitlines()</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> mList:</span><br><span class="line">        lineList = line.split(<span class="string">"]"</span>)</span><br><span class="line">        <span class="keyword">for</span> x <span class="keyword">in</span> lineList[:<span class="number">-1</span>]:</span><br><span class="line">            timelist = x[<span class="number">1</span>:].split(<span class="string">":"</span>)</span><br><span class="line">            <span class="comment">#["00",  "12"]</span></span><br><span class="line">            timef = float(timelist[<span class="number">0</span>]) * <span class="number">60</span> + float(timelist[<span class="number">-1</span>])</span><br><span class="line">            musicDict[timef] = lineList[<span class="number">-1</span>]</span><br><span class="line">    <span class="keyword">return</span> musicDict</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printMusic</span><span class="params">(musicDict)</span>:</span></span><br><span class="line">    tList = list(musicDict)</span><br><span class="line">    tList.sort()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(tList)):</span><br><span class="line">        <span class="keyword">if</span> i == <span class="number">0</span>:</span><br><span class="line">            time.sleep(tList[i])</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            time.sleep(tList[i]-tList[i<span class="number">-1</span>])</span><br><span class="line">        print(musicDict.get(tList[i]))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">musicLrc = <span class="string">'''</span></span><br><span class="line"><span class="string">[00:03.50]传奇</span></span><br><span class="line"><span class="string">[00:19.10]作词：刘兵 作曲：李健</span></span><br><span class="line"><span class="string">[00:20.60]演唱：王菲</span></span><br><span class="line"><span class="string">[00:26.60]    </span></span><br><span class="line"><span class="string">[04:40.75][02:39.90][00:36.25]只是因为在人群中多看了你一眼</span></span><br><span class="line"><span class="string">[04:49.00]</span></span><br><span class="line"><span class="string">[02:47.44][00:43.69]再也没能忘掉你容颜</span></span><br><span class="line"><span class="string">[02:54.83][00:51.24]梦想着偶然能有一天再相见</span></span><br><span class="line"><span class="string">[03:02.32][00:58.75]从此我开始孤单思念</span></span><br><span class="line"><span class="string">[03:08.15][01:04.30]</span></span><br><span class="line"><span class="string">[03:09.35][01:05.50]想你时你在天边</span></span><br><span class="line"><span class="string">[03:16.90][01:13.13]想你时你在眼前</span></span><br><span class="line"><span class="string">[03:24.42][01:20.92]想你时你在脑海</span></span><br><span class="line"><span class="string">[03:31.85][01:28.44]想你时你在心田</span></span><br><span class="line"><span class="string">[03:38.67][01:35.05]</span></span><br><span class="line"><span class="string">[04:09.96][03:39.87][01:36.25]宁愿相信我们前世有约</span></span><br><span class="line"><span class="string">[04:16.37][03:46.38][01:42.47]今生的爱情故事 不会再改变</span></span><br><span class="line"><span class="string">[04:24.82][03:54.83][01:51.18]宁愿用这一生等你发现</span></span><br><span class="line"><span class="string">[04:31.38][04:01.40][01:57.43]我一直在你身旁 从未走远</span></span><br><span class="line"><span class="string">[04:39.55][04:09.00][02:07.85]</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">musicdict = getMusicDict(musicLrc)</span><br><span class="line">printMusic(musicdict)</span><br></pre></td></tr></table></figure>	
 	</div>
 	
 	<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
@@ -361,8 +356,12 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
+			<a href="/2019/07/21/字符串/" title="字符串" rel="prev">
+				&laquo;上一篇
+			</a>
 		
-			<a href="/2019/07/21/python输出及其运算/" title="python输出及其运算" rel="next">
+		
+			<a href="/2019/07/21/装饰器/" title="装饰器" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -440,30 +439,32 @@ list1 = list2 + list3
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
-								列表及其常用函数			
+							<a class="relate-post-title" href="/2019/07/21/使用栈来遍历目录/" title="栈">
+								栈			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
 								七月 21日, 2019				
 							</p>
 							<p class="relate-post-content">
-								列表及其常用函数1. 定义:有序的集合
-2.创建列表：
-列表名=[元素1，元素2，….]
+								使用栈来遍历目录
 
-元素：可以试任意类型元素与元素使用逗号隔开
-3.列表的操作1.列表的组合
-list1 = list2 + list3
+import os
 
-功能：将list1中的...
+
+def getdirstack(path):
+    # 创建一个栈
+    stack = []
+    # 先让根路径压栈
+    stack.append(path)
+    # 判断...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">				
+							<a href="/2019/07/21/使用栈来遍历目录/" title="栈">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="列表及其常用函数"/>
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="栈"/>
 							</a>
 						</div>
 					</li>											
@@ -527,6 +528,37 @@ def getAllDirQueue(path):
 			
 					<li>
 						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
+								列表及其常用函数			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								列表及其常用函数1. 定义:有序的集合
+2.创建列表：
+列表名=[元素1，元素2，….]
+
+元素：可以试任意类型元素与元素使用逗号隔开
+3.列表的操作1.列表的组合
+list1 = list2 + list3
+
+功能：将list1中的...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="列表及其常用函数"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2019/07/21/os模块/" title="os模块">
 								os模块			
 							</a>
@@ -546,39 +578,6 @@ os.getcwd()功能：获取当前目录的绝对路径
 							<a href="/2019/07/21/os模块/" title="os模块">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="os模块"/>
-							</a>
-						</div>
-					</li>											
-			
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/07/21/使用栈来遍历目录/" title="栈">
-								栈			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								七月 21日, 2019				
-							</p>
-							<p class="relate-post-content">
-								使用栈来遍历目录
-
-import os
-
-
-def getdirstack(path):
-    # 创建一个栈
-    stack = []
-    # 先让根路径压栈
-    stack.append(path)
-    # 判断...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/07/21/使用栈来遍历目录/" title="栈">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="栈"/>
 							</a>
 						</div>
 					</li>											
