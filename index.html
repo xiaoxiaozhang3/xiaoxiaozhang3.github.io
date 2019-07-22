@@ -49,7 +49,7 @@
 
 
 <!-- header -->
-<header class="fixbackground" data-img-mode="normal" data-normal-src="/img/1.jpg" data-random-max="110" data-random-src="/img/Random-img/">
+<header class="fixbackground" data-img-mode="random" data-normal-src="/img/1.jpg" data-random-max="110" data-random-src="/img/Random-img/">
 	<div class="mask">
 		<!-- Logo and navigation -->
 		<div class="h-header">
@@ -441,7 +441,7 @@
 		</div>
 		
 		<div class="post" id="post">
-			<a class="post-cover" href="/2019/07/21/列表及其常用函数 /" title=" 列表及其常用函数 ">
+			<a class="post-cover" href="/2019/07/21/使用栈来遍历目录/" title=" 栈 ">
 				
 				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg"/>
 			</a>
@@ -451,23 +451,26 @@
 					七月 21日, 2019
 				</p>	
 				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
+					<a href="/2019/07/21/使用栈来遍历目录/" title="栈">
 						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 						
-	<a href="/2019/07/21/列表及其常用函数 /" itemprop="url">
-		列表及其常用函数
+	<a href="/2019/07/21/使用栈来遍历目录/" itemprop="url">
+		栈
 	</a>
 
 					</a>
 				</h3>
 				<p class="post-content">
 					
-						列表及其常用函数1. 定义:有序的集合
-2.创建列表：
-列表名=[元素1，元素2，….]
+						使用栈来遍历目录
 
-元素：可以试任意类型元素与元素使用逗号隔开
-3.列表的操作1....
+import os
+
+
+def getdirstack(path):
+    # 创建一个栈
+    stack = []
+    #...
 					
 				</p>
 				<p class="post-meta">
@@ -569,7 +572,7 @@ def getAllDirQueue(path):
 		</div>
 		
 		<div class="post" id="post">
-			<a class="post-cover" href="/2019/07/21/函数/" title=" 函数 ">
+			<a class="post-cover" href="/2019/07/21/列表及其常用函数 /" title=" 列表及其常用函数 ">
 				
 				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg"/>
 			</a>
@@ -579,19 +582,82 @@ def getAllDirQueue(path):
 					七月 21日, 2019
 				</p>	
 				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/07/21/函数/" title="函数">
+					<a href="/2019/07/21/列表及其常用函数 /" title="列表及其常用函数">
 						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 						
-	<a href="/2019/07/21/函数/" itemprop="url">
-		函数
+	<a href="/2019/07/21/列表及其常用函数 /" itemprop="url">
+		列表及其常用函数
 	</a>
 
 					</a>
 				</h3>
 				<p class="post-content">
 					
-						函数函数参数：1.位置参数又称必选参数传递参数的时候，必须按照函数定义的顺序以及个数来进行传参。
-2.关键字参数指传递参数的过程中，通过键值对的方式直接给...
+						列表及其常用函数1. 定义:有序的集合
+2.创建列表：
+列表名=[元素1，元素2，….]
+
+元素：可以试任意类型元素与元素使用逗号隔开
+3.列表的操作1....
+					
+				</p>
+				<p class="post-meta">
+					
+
+
+
+					
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+				</p>
+			</div>
+		</div>
+		
+		<div class="post" id="post">
+			<a class="post-cover" href="/2019/07/21/装饰器/" title=" 装饰器 ">
+				
+				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg"/>
+			</a>
+
+			<div class="post-text">
+				<p class="post-time">
+					七月 21日, 2019
+				</p>	
+				<h3 class="post-title" id="post-title-index">
+					<a href="/2019/07/21/装饰器/" title="装饰器">
+						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+						
+	<a href="/2019/07/21/装饰器/" itemprop="url">
+		装饰器
+	</a>
+
+					</a>
+				</h3>
+				<p class="post-content">
+					
+						装饰器在代码运行的期间动态增加功能的方式，我们称之为装饰器。
+123456#最简单的装饰器def outer(func):    def inner():...
 					
 				</p>
 				<p class="post-meta">
@@ -689,72 +755,6 @@ os.getcwd()功能：获取当前目录的绝对路径
 		</div>
 		
 		<div class="post" id="post">
-			<a class="post-cover" href="/2019/07/21/使用栈来遍历目录/" title=" 栈 ">
-				
-				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg"/>
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					七月 21日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/07/21/使用栈来遍历目录/" title="栈">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/07/21/使用栈来遍历目录/" itemprop="url">
-		栈
-	</a>
-
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						使用栈来遍历目录
-
-import os
-
-
-def getdirstack(path):
-    # 创建一个栈
-    stack = []
-    #...
-					
-				</p>
-				<p class="post-meta">
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-				</p>
-			</div>
-		</div>
-		
-		<div class="post" id="post">
 			<a class="post-cover" href="/2019/07/21/判断字符串是否合法/" title=" 字符串的使用 ">
 				
 				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg"/>
@@ -813,7 +813,7 @@ def getdirstack(path):
 		</div>
 		
 		<div class="post" id="post">
-			<a class="post-cover" href="/2019/07/21/字典/" title=" 字典 ">
+			<a class="post-cover" href="/2019/07/21/字符串/" title=" 字符串 ">
 				
 				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg"/>
 			</a>
@@ -823,19 +823,23 @@ def getdirstack(path):
 					七月 21日, 2019
 				</p>	
 				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/07/21/字典/" title="字典">
+					<a href="/2019/07/21/字符串/" title="字符串">
 						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 						
-	<a href="/2019/07/21/字典/" itemprop="url">
-		字典
+	<a href="/2019/07/21/字符串/" itemprop="url">
+		字符串
 	</a>
 
 					</a>
 				</h3>
 				<p class="post-content">
 					
-						字典采用键（key）值（value）对的方式存储的本质：是一个无序的集合
-字典中key的特性：1.key不能重复key即使重复不会报错，后写的将前写的覆盖...
+						字符串##字符串的拼接：1.使用”+”号
+
+str3 = str1+str2
+
+2、使用”,”号注意：在输出的时候使用,在逗号的位置会产生一个空格
+3.使...
 					
 				</p>
 				<p class="post-meta">
