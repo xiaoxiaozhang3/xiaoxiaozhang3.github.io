@@ -61,25 +61,6 @@
     
     
     <entry>
-      <title>os模块</title>
-      <link href="/2019/07/21/os%E6%A8%A1%E5%9D%97/"/>
-      <url>/2019/07/21/os%E6%A8%A1%E5%9D%97/</url>
-      
-        <content type="html"><![CDATA[<h1 id="os模块"><a href="#os模块" class="headerlink" title="os模块"></a>os模块</h1><p>os模块是一个python内置的文件模块</p><h2 id="os模块的使用"><a href="#os模块的使用" class="headerlink" title="os模块的使用"></a>os模块的使用</h2><p><code>import os</code></p><p><code>os.getcwd()</code><br>功能：获取当前目录的绝对路径</p><p>绝对路径：<br>window：以盘符开头，或者以\开头<br>linux：以/开头或者以~开头<br>相对路径：<br>window：以文件开头，以./开头 或者../开头<br>linux：与window相同</p><a id="more"></a><p><code>os.listdir(path)</code><br>功能：显示指定路径下所有的文件名以及目录名，若path不指定，默认当前目录下。</p><p><code>os.path.abspath(path)</code><br>功能：将指定的路径拼接到当前所在所在的路径下</p><p><code>os.path.split(path)</code><br>功能：返回指定路径目录部分以及文件部分<br>本质：以最后一个/来进行切分，返回两个值，前面的就是目录部分，后面的就是文件部分<br>若是”.”切分到文件部分去</p><p><code>os.path.dirname(path)</code><br>功能：返回指定路径的目录部分</p><p><code>os.path.basename(path)</code><br>功能：返回指定路径的文件部分</p><p><code>os.path.join(path,paths)</code><br>功能:对路径进行拼接处理<br>paths：可以接收多个路径<br>若paths存在绝对路径，前面路径则不保留。</p><p><code>os.path.getsize(path)</code><br>功能:获取指定路径文件的大小【目录的大小获取不到】</p><p><code>os.path.exists(path)</code><br>功能：判断指定的路径是否存在，若存在则返回True，否则返回False</p><p><code>os.path.isdir(path)</code><br>功能：判断该路径是否为目录，若是返回True，否则返回False</p><p><code>os.path.isfile(path)</code><br>功能：判断指定的路径是否为文件，若是则返回True，否则返回False</p><p><code>os.remove(path)</code><br>功能:删除指定的路径的文件</p><p><code>os.mkdir(path)</code><br>功能：创建指定的目录</p><p><code>os.makedirs(path)</code><br>功能：递归创建多个目录</p><p><code>os.rmdir(path)</code><br>功能：删除指定的空目录</p><p><code>os.removedirs(path)</code><br>功能：递归删除目录</p><p><code>os.chdir(path)</code><br>功能：切换目录</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> python基础 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>文件操作</title>
       <link href="/2019/07/21/python%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
       <url>/2019/07/21/python%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/</url>
@@ -118,6 +99,25 @@
     
     
     <entry>
+      <title>os模块</title>
+      <link href="/2019/07/21/os%E6%A8%A1%E5%9D%97/"/>
+      <url>/2019/07/21/os%E6%A8%A1%E5%9D%97/</url>
+      
+        <content type="html"><![CDATA[<h1 id="os模块"><a href="#os模块" class="headerlink" title="os模块"></a>os模块</h1><p>os模块是一个python内置的文件模块</p><h2 id="os模块的使用"><a href="#os模块的使用" class="headerlink" title="os模块的使用"></a>os模块的使用</h2><p><code>import os</code></p><p><code>os.getcwd()</code><br>功能：获取当前目录的绝对路径</p><p>绝对路径：<br>window：以盘符开头，或者以\开头<br>linux：以/开头或者以~开头<br>相对路径：<br>window：以文件开头，以./开头 或者../开头<br>linux：与window相同</p><a id="more"></a><p><code>os.listdir(path)</code><br>功能：显示指定路径下所有的文件名以及目录名，若path不指定，默认当前目录下。</p><p><code>os.path.abspath(path)</code><br>功能：将指定的路径拼接到当前所在所在的路径下</p><p><code>os.path.split(path)</code><br>功能：返回指定路径目录部分以及文件部分<br>本质：以最后一个/来进行切分，返回两个值，前面的就是目录部分，后面的就是文件部分<br>若是”.”切分到文件部分去</p><p><code>os.path.dirname(path)</code><br>功能：返回指定路径的目录部分</p><p><code>os.path.basename(path)</code><br>功能：返回指定路径的文件部分</p><p><code>os.path.join(path,paths)</code><br>功能:对路径进行拼接处理<br>paths：可以接收多个路径<br>若paths存在绝对路径，前面路径则不保留。</p><p><code>os.path.getsize(path)</code><br>功能:获取指定路径文件的大小【目录的大小获取不到】</p><p><code>os.path.exists(path)</code><br>功能：判断指定的路径是否存在，若存在则返回True，否则返回False</p><p><code>os.path.isdir(path)</code><br>功能：判断该路径是否为目录，若是返回True，否则返回False</p><p><code>os.path.isfile(path)</code><br>功能：判断指定的路径是否为文件，若是则返回True，否则返回False</p><p><code>os.remove(path)</code><br>功能:删除指定的路径的文件</p><p><code>os.mkdir(path)</code><br>功能：创建指定的目录</p><p><code>os.makedirs(path)</code><br>功能：递归创建多个目录</p><p><code>os.rmdir(path)</code><br>功能：删除指定的空目录</p><p><code>os.removedirs(path)</code><br>功能：递归删除目录</p><p><code>os.chdir(path)</code><br>功能：切换目录</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>队列</title>
       <link href="/2019/07/21/%E4%BD%BF%E7%94%A8%E9%98%9F%E5%88%97%E6%9D%A5%E9%81%8D%E5%8E%86%E7%9B%AE%E5%BD%95/"/>
       <url>/2019/07/21/%E4%BD%BF%E7%94%A8%E9%98%9F%E5%88%97%E6%9D%A5%E9%81%8D%E5%8E%86%E7%9B%AE%E5%BD%95/</url>
@@ -137,11 +137,11 @@
     
     
     <entry>
-      <title>列表及其常用函数</title>
-      <link href="/2019/07/21/%E5%88%97%E8%A1%A8%E5%8F%8A%E5%85%B6%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%20/"/>
-      <url>/2019/07/21/%E5%88%97%E8%A1%A8%E5%8F%8A%E5%85%B6%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%20/</url>
+      <title>函数</title>
+      <link href="/2019/07/21/%E5%87%BD%E6%95%B0/"/>
+      <url>/2019/07/21/%E5%87%BD%E6%95%B0/</url>
       
-        <content type="html"><![CDATA[<h1 id="列表及其常用函数"><a href="#列表及其常用函数" class="headerlink" title="列表及其常用函数"></a>列表及其常用函数</h1><h2 id="1-定义"><a href="#1-定义" class="headerlink" title="1. 定义:"></a>1. 定义:</h2><p>有序的集合</p><h2 id="2-创建列表："><a href="#2-创建列表：" class="headerlink" title="2.创建列表："></a>2.创建列表：</h2><blockquote><p>列表名=[元素1，元素2，….]</p></blockquote><p>元素：可以试任意类型<br>元素与元素使用逗号隔开</p><h2 id="3-列表的操作"><a href="#3-列表的操作" class="headerlink" title="3.列表的操作"></a>3.列表的操作</h2><h4 id="1-列表的组合"><a href="#1-列表的组合" class="headerlink" title="1.列表的组合"></a>1.列表的组合</h4><blockquote><p>list1 = list2 + list3</p></blockquote><p>功能：将list1中的元素与list2中的元素组合成一个新的列表并返回</p><h4 id="2-列表的重复"><a href="#2-列表的重复" class="headerlink" title="2.列表的重复"></a>2.列表的重复</h4><blockquote><p>list2 = list *n</p></blockquote><p>功能：将list1中的元素重复n次输出到list2中</p><h4 id="3-列表的访问"><a href="#3-列表的访问" class="headerlink" title="3.列表的访问"></a>3.列表的访问</h4><blockquote><p>list1[index]</p></blockquote><p>index 取值范围：[0,len(list1)<br>可以取负值，若为负，则从右往左取值</p><h4 id="4-列表的截取"><a href="#4-列表的截取" class="headerlink" title="4.列表的截取"></a>4.列表的截取</h4><blockquote><p>list1[start:end:step]</p></blockquote><h4 id="5-二维列表"><a href="#5-二维列表" class="headerlink" title="5.二维列表"></a>5.二维列表</h4><blockquote><p>list3 =[list1，list2]</p></blockquote><p>注意:当列表中的元素刚好为列表的时候，我们可以称之为二维列表</p><h2 id="列表的常用函数"><a href="#列表的常用函数" class="headerlink" title="列表的常用函数"></a>列表的常用函数</h2><h4 id="1-添加元素"><a href="#1-添加元素" class="headerlink" title="1.添加元素"></a>1.添加元素</h4><blockquote><p>list。append(obj)</p></blockquote><h4 id="2-将序列打碎插入"><a href="#2-将序列打碎插入" class="headerlink" title="2.将序列打碎插入"></a>2.将序列打碎插入</h4><blockquote><p>list1.extend(序列)</p></blockquote><h4 id="3-删除指定下标处的元素"><a href="#3-删除指定下标处的元素" class="headerlink" title="3.删除指定下标处的元素"></a>3.删除指定下标处的元素</h4><blockquote><p>list.pop(index)</p></blockquote><h4 id="4-指定下标插入指定的元素"><a href="#4-指定下标插入指定的元素" class="headerlink" title="4.指定下标插入指定的元素"></a>4.指定下标插入指定的元素</h4><blockquote><p>list1.insert(index,obj)</p></blockquote><h4 id="5-函数第一次匹配到的元素"><a href="#5-函数第一次匹配到的元素" class="headerlink" title="5.函数第一次匹配到的元素"></a>5.函数第一次匹配到的元素</h4><blockquote><p>list1.remove(obj)</p></blockquote><h4 id="6-清空列表"><a href="#6-清空列表" class="headerlink" title="6.清空列表"></a>6.清空列表</h4><blockquote><p>list.clear</p></blockquote><ul><li><input disabled type="checkbox"> 这里是引用</li></ul><h4 id="7-删除列表"><a href="#7-删除列表" class="headerlink" title="7.删除列表"></a>7.删除列表</h4><blockquote><p>del list</p></blockquote><h4 id="8-统计指定元素出现的次数"><a href="#8-统计指定元素出现的次数" class="headerlink" title="8.统计指定元素出现的次数"></a>8.统计指定元素出现的次数</h4><blockquote><p>list2.count(obj)</p></blockquote><h4 id="9-返回列表中最大-最小值"><a href="#9-返回列表中最大-最小值" class="headerlink" title="9.返回列表中最大/最小值"></a>9.返回列表中最大/最小值</h4><blockquote><p>max(list1) / min(list1)</p></blockquote><h4 id="10-倒序列表"><a href="#10-倒序列表" class="headerlink" title="10.倒序列表"></a>10.倒序列表</h4><blockquote><p>list1.reverse()</p></blockquote><h4 id="11-将列表排序"><a href="#11-将列表排序" class="headerlink" title="11.将列表排序"></a>11.将列表排序</h4><blockquote><p>list1.sort()</p></blockquote><p>默认升序 ，reverse =True 降序</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="函数参数："><a href="#函数参数：" class="headerlink" title="函数参数："></a>函数参数：</h2><h3 id="1-位置参数又称必选参数"><a href="#1-位置参数又称必选参数" class="headerlink" title="1.位置参数又称必选参数"></a>1.位置参数又称必选参数</h3><p>传递参数的时候，必须按照函数定义的顺序以及个数来进行传参。</p><h3 id="2-关键字参数"><a href="#2-关键字参数" class="headerlink" title="2.关键字参数"></a>2.关键字参数</h3><p>指传递参数的过程中，通过键值对的方式直接给形参指定具体的值，使用这种方式进行传参，可以清除位置关系<br>关键字参数与位置参数<br>可以同时存在，但是，若同时存在的时候，位置参数要写在前面<br>关键字参数要写在后面。</p><p>写在参数列表前面的形参若需使用关键字传参，<br>那么后面的参数一定也要使用关键字传参</p><a id="more"></a><h3 id="3-默认参数"><a href="#3-默认参数" class="headerlink" title="3.默认参数"></a>3.默认参数</h3><p>在定义函数的时候，我们可以给我们的函数提供一个默认值，若需要更改的时候，<br>我们传递该参数，若不需要更改的时候，我们不传递，若不传递，则使用提供默认值。</p><h3 id="4-不定长参数"><a href="#4-不定长参数" class="headerlink" title="4.不定长参数"></a>4.不定长参数</h3><p>定义函数的时候，有时候不知道用户要传递多少个参数进来，此时，我们可以使用不定长<br>参数来进行处理<br>特点：<br>能够处理比声明的更多的参数，传递多少参数，则处理多少参数，不传递则不处理。<br>包裹位置参数<br>收集除位置参数之外的剩余的必选参数，作为元组来进行处理。<br>使用包裹位置参数的时候，定义的时候只需要在形参前面添加一个<em>即可。<br>一般情况下使用</em> **args</p><p>若位置参数与包裹位置参数同时存在的情况下，<br>我们需要将包裹位置参数写在位置参数的后面</p><p>包裹关键字参数<br>收集除位置参数，以及默认参数以外剩余的关键字参数，作为字典来进行处理<br>定义包裹关键字参数的时候使用**<br>一般使用**kwargs</p><p>若在python定义函数的过程中，位置参数，默认参数，包裹位置参数以及包裹关键字<br>参数同时存在的情况下，<br>一般情况下顺序：位置参数，默认参数，包裹位置参数，包裹关键字参数<br>当然，默认参数与包裹位置参数之间顺序可以调换</p><h2 id="万能参数"><a href="#万能参数" class="headerlink" title="万能参数"></a>万能参数</h2><blockquote><p>def func(<em>args,*</em>kwargs):<br> pass</p></blockquote><h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><p>概念：指的是一类无需定义标识符的函数或者子程序<br>优点：没有名字，所以不会引起函数名冲突</p><h3 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h3><p>lambda 参数列表: 表达式</p><p>1.lambda只是一个表达式，函数体非常简单<br>2.lambda 匿名函数<br>参数与参数之间使用逗号隔开，冒号不能省略<br>3.表达式只能有一条语句，此函数无需return，表达式的结果就是函数的返回值</p><h3 id="调用匿名函数："><a href="#调用匿名函数：" class="headerlink" title="调用匿名函数："></a>调用匿名函数：</h3><p>将lambda表达式赋值给一个变量，通过调用这个变量来进行调用此匿名函数。</p><p>匿名函数适用于比较简单一些运算。</p><h2 id="偏函数"><a href="#偏函数" class="headerlink" title="偏函数"></a>偏函数</h2><p>将函数中的某些参数给固定住，然后返回一个新的函数，<br>调用新的函数会更加的方便。<br>作用：方便函数的调用。<br>偏函数是functools模块中提供的一个功能。</p><blockquote><p>functools.partial(func,要固定参数)</p></blockquote><p>参数一：被固定的函数的函数名<br>参数二：要固定的参数，可以以键值对的方式传参也可以以位置参数传参</p><p>功能：相等于给某个函数设置默认值，调用函数的时候会更加的方便。</p><h2 id="回调函数："><a href="#回调函数：" class="headerlink" title="回调函数："></a>回调函数：</h2><p>将函数作为参数传递到另外一个函数中，这个被传递进去后来又<br>被调用的函数我们称之为回调函数</p><h2 id="递归函数："><a href="#递归函数：" class="headerlink" title="递归函数："></a>递归函数：</h2><p>函数的内部可以调用其他的函数，但是若调用的这个函数正好是他自己本身的时候，<br>我们称这个函数为递归函数。</p><p>不建议使用递归<br>1.考虑栈溢出<br>2.递归性能不如循环</p><p>思路：<br>1.写出临界条件<br>2.找出这次与上次的关系<br>3.假设此函数已经可以使用，通过上次的结果计算本次的结果</p>]]></content>
       
       
       
@@ -156,11 +156,11 @@
     
     
     <entry>
-      <title>函数</title>
-      <link href="/2019/07/21/%E5%87%BD%E6%95%B0/"/>
-      <url>/2019/07/21/%E5%87%BD%E6%95%B0/</url>
+      <title>列表及其常用函数</title>
+      <link href="/2019/07/21/%E5%88%97%E8%A1%A8%E5%8F%8A%E5%85%B6%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%20/"/>
+      <url>/2019/07/21/%E5%88%97%E8%A1%A8%E5%8F%8A%E5%85%B6%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%20/</url>
       
-        <content type="html"><![CDATA[<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="函数参数："><a href="#函数参数：" class="headerlink" title="函数参数："></a>函数参数：</h2><h3 id="1-位置参数又称必选参数"><a href="#1-位置参数又称必选参数" class="headerlink" title="1.位置参数又称必选参数"></a>1.位置参数又称必选参数</h3><p>传递参数的时候，必须按照函数定义的顺序以及个数来进行传参。</p><h3 id="2-关键字参数"><a href="#2-关键字参数" class="headerlink" title="2.关键字参数"></a>2.关键字参数</h3><p>指传递参数的过程中，通过键值对的方式直接给形参指定具体的值，使用这种方式进行传参，可以清除位置关系<br>关键字参数与位置参数<br>可以同时存在，但是，若同时存在的时候，位置参数要写在前面<br>关键字参数要写在后面。</p><p>写在参数列表前面的形参若需使用关键字传参，<br>那么后面的参数一定也要使用关键字传参</p><a id="more"></a><h3 id="3-默认参数"><a href="#3-默认参数" class="headerlink" title="3.默认参数"></a>3.默认参数</h3><p>在定义函数的时候，我们可以给我们的函数提供一个默认值，若需要更改的时候，<br>我们传递该参数，若不需要更改的时候，我们不传递，若不传递，则使用提供默认值。</p><h3 id="4-不定长参数"><a href="#4-不定长参数" class="headerlink" title="4.不定长参数"></a>4.不定长参数</h3><p>定义函数的时候，有时候不知道用户要传递多少个参数进来，此时，我们可以使用不定长<br>参数来进行处理<br>特点：<br>能够处理比声明的更多的参数，传递多少参数，则处理多少参数，不传递则不处理。<br>包裹位置参数<br>收集除位置参数之外的剩余的必选参数，作为元组来进行处理。<br>使用包裹位置参数的时候，定义的时候只需要在形参前面添加一个<em>即可。<br>一般情况下使用</em> **args</p><p>若位置参数与包裹位置参数同时存在的情况下，<br>我们需要将包裹位置参数写在位置参数的后面</p><p>包裹关键字参数<br>收集除位置参数，以及默认参数以外剩余的关键字参数，作为字典来进行处理<br>定义包裹关键字参数的时候使用**<br>一般使用**kwargs</p><p>若在python定义函数的过程中，位置参数，默认参数，包裹位置参数以及包裹关键字<br>参数同时存在的情况下，<br>一般情况下顺序：位置参数，默认参数，包裹位置参数，包裹关键字参数<br>当然，默认参数与包裹位置参数之间顺序可以调换</p><h2 id="万能参数"><a href="#万能参数" class="headerlink" title="万能参数"></a>万能参数</h2><blockquote><p>def func(<em>args,*</em>kwargs):<br> pass</p></blockquote><h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><p>概念：指的是一类无需定义标识符的函数或者子程序<br>优点：没有名字，所以不会引起函数名冲突</p><h3 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h3><p>lambda 参数列表: 表达式</p><p>1.lambda只是一个表达式，函数体非常简单<br>2.lambda 匿名函数<br>参数与参数之间使用逗号隔开，冒号不能省略<br>3.表达式只能有一条语句，此函数无需return，表达式的结果就是函数的返回值</p><h3 id="调用匿名函数："><a href="#调用匿名函数：" class="headerlink" title="调用匿名函数："></a>调用匿名函数：</h3><p>将lambda表达式赋值给一个变量，通过调用这个变量来进行调用此匿名函数。</p><p>匿名函数适用于比较简单一些运算。</p><h2 id="偏函数"><a href="#偏函数" class="headerlink" title="偏函数"></a>偏函数</h2><p>将函数中的某些参数给固定住，然后返回一个新的函数，<br>调用新的函数会更加的方便。<br>作用：方便函数的调用。<br>偏函数是functools模块中提供的一个功能。</p><blockquote><p>functools.partial(func,要固定参数)</p></blockquote><p>参数一：被固定的函数的函数名<br>参数二：要固定的参数，可以以键值对的方式传参也可以以位置参数传参</p><p>功能：相等于给某个函数设置默认值，调用函数的时候会更加的方便。</p><h2 id="回调函数："><a href="#回调函数：" class="headerlink" title="回调函数："></a>回调函数：</h2><p>将函数作为参数传递到另外一个函数中，这个被传递进去后来又<br>被调用的函数我们称之为回调函数</p><h2 id="递归函数："><a href="#递归函数：" class="headerlink" title="递归函数："></a>递归函数：</h2><p>函数的内部可以调用其他的函数，但是若调用的这个函数正好是他自己本身的时候，<br>我们称这个函数为递归函数。</p><p>不建议使用递归<br>1.考虑栈溢出<br>2.递归性能不如循环</p><p>思路：<br>1.写出临界条件<br>2.找出这次与上次的关系<br>3.假设此函数已经可以使用，通过上次的结果计算本次的结果</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="列表及其常用函数"><a href="#列表及其常用函数" class="headerlink" title="列表及其常用函数"></a>列表及其常用函数</h1><h2 id="1-定义"><a href="#1-定义" class="headerlink" title="1. 定义:"></a>1. 定义:</h2><p>有序的集合</p><h2 id="2-创建列表："><a href="#2-创建列表：" class="headerlink" title="2.创建列表："></a>2.创建列表：</h2><blockquote><p>列表名=[元素1，元素2，….]</p></blockquote><p>元素：可以试任意类型<br>元素与元素使用逗号隔开</p><h2 id="3-列表的操作"><a href="#3-列表的操作" class="headerlink" title="3.列表的操作"></a>3.列表的操作</h2><h4 id="1-列表的组合"><a href="#1-列表的组合" class="headerlink" title="1.列表的组合"></a>1.列表的组合</h4><blockquote><p>list1 = list2 + list3</p></blockquote><p>功能：将list1中的元素与list2中的元素组合成一个新的列表并返回</p><h4 id="2-列表的重复"><a href="#2-列表的重复" class="headerlink" title="2.列表的重复"></a>2.列表的重复</h4><blockquote><p>list2 = list *n</p></blockquote><p>功能：将list1中的元素重复n次输出到list2中</p><h4 id="3-列表的访问"><a href="#3-列表的访问" class="headerlink" title="3.列表的访问"></a>3.列表的访问</h4><blockquote><p>list1[index]</p></blockquote><p>index 取值范围：[0,len(list1)<br>可以取负值，若为负，则从右往左取值</p><h4 id="4-列表的截取"><a href="#4-列表的截取" class="headerlink" title="4.列表的截取"></a>4.列表的截取</h4><blockquote><p>list1[start:end:step]</p></blockquote><h4 id="5-二维列表"><a href="#5-二维列表" class="headerlink" title="5.二维列表"></a>5.二维列表</h4><blockquote><p>list3 =[list1，list2]</p></blockquote><p>注意:当列表中的元素刚好为列表的时候，我们可以称之为二维列表</p><h2 id="列表的常用函数"><a href="#列表的常用函数" class="headerlink" title="列表的常用函数"></a>列表的常用函数</h2><h4 id="1-添加元素"><a href="#1-添加元素" class="headerlink" title="1.添加元素"></a>1.添加元素</h4><blockquote><p>list。append(obj)</p></blockquote><h4 id="2-将序列打碎插入"><a href="#2-将序列打碎插入" class="headerlink" title="2.将序列打碎插入"></a>2.将序列打碎插入</h4><blockquote><p>list1.extend(序列)</p></blockquote><h4 id="3-删除指定下标处的元素"><a href="#3-删除指定下标处的元素" class="headerlink" title="3.删除指定下标处的元素"></a>3.删除指定下标处的元素</h4><blockquote><p>list.pop(index)</p></blockquote><h4 id="4-指定下标插入指定的元素"><a href="#4-指定下标插入指定的元素" class="headerlink" title="4.指定下标插入指定的元素"></a>4.指定下标插入指定的元素</h4><blockquote><p>list1.insert(index,obj)</p></blockquote><h4 id="5-函数第一次匹配到的元素"><a href="#5-函数第一次匹配到的元素" class="headerlink" title="5.函数第一次匹配到的元素"></a>5.函数第一次匹配到的元素</h4><blockquote><p>list1.remove(obj)</p></blockquote><h4 id="6-清空列表"><a href="#6-清空列表" class="headerlink" title="6.清空列表"></a>6.清空列表</h4><blockquote><p>list.clear</p></blockquote><ul><li><input disabled type="checkbox"> 这里是引用</li></ul><h4 id="7-删除列表"><a href="#7-删除列表" class="headerlink" title="7.删除列表"></a>7.删除列表</h4><blockquote><p>del list</p></blockquote><h4 id="8-统计指定元素出现的次数"><a href="#8-统计指定元素出现的次数" class="headerlink" title="8.统计指定元素出现的次数"></a>8.统计指定元素出现的次数</h4><blockquote><p>list2.count(obj)</p></blockquote><h4 id="9-返回列表中最大-最小值"><a href="#9-返回列表中最大-最小值" class="headerlink" title="9.返回列表中最大/最小值"></a>9.返回列表中最大/最小值</h4><blockquote><p>max(list1) / min(list1)</p></blockquote><h4 id="10-倒序列表"><a href="#10-倒序列表" class="headerlink" title="10.倒序列表"></a>10.倒序列表</h4><blockquote><p>list1.reverse()</p></blockquote><h4 id="11-将列表排序"><a href="#11-将列表排序" class="headerlink" title="11.将列表排序"></a>11.将列表排序</h4><blockquote><p>list1.sort()</p></blockquote><p>默认升序 ，reverse =True 降序</p>]]></content>
       
       
       
