@@ -1,0 +1,45 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Photo Gallery</title>  
+    <link rel="stylesheet" href="scripts.css">  
+</head>  
+<body>  
+<div class="gallery" id="galleryDiv">
+  <img src="C:\Users\os-zhanglf\Desktop\图片\Snipaste_2024-11-05_13-52-17.png" alt="" />
+  <img src="C:\Users\os-zhanglf\Desktop\图片\Snipaste_2024-11-05_13-51-53.png" alt="" />
+  <img src="C:\Users\os-zhanglf\Desktop\图片\Snipaste_2024-11-05_13-52-26.png" alt="" />
+  <img src="C:\Users\os-zhanglf\Desktop\图片\Snipaste_2024-11-05_13-52-35.png" alt="" />
+  <img src="C:\Users\os-zhanglf\Desktop\图片\Snipaste_2024-11-05_13-52-47.png" alt="" />
+  <img src="C:\Users\os-zhanglf\Documents\WXWorkLocal\1688849882265697_1970325105503026\Cache\Image\2024-11\clipbord_1730773610486(1).png" alt="" />
+  <img src="C:\Users\os-zhanglf\Documents\WXWorkLocal\1688849882265697_1970325105503026\Cache\Image\2024-11\clipbord_1730773610486(1).png" alt="" / id='animated-img'>
+</div>
+<script>  
+  document.addEventListener('DOMContentLoaded', function() {  
+    var animatedImg = document.getElementById('animated-img');  
+    var galleryDiv = document.getElementById('galleryDiv');  
+  
+    animatedImg.addEventListener('animationend', function() {  
+      // 动画结束后执行的操作  
+      console.log('Animation ended!');  
+  
+      // 刷新div（这里通过重新加载内容来模拟刷新，实际应用中可能有所不同）  
+      // 注意：这会导致页面上的所有状态丢失，并且可能不是您想要的效果  
+      // 如果您只是想重置动画，可以考虑其他方法，比如移除并重新添加类名  
+      // 或者通过JavaScript直接修改样式来重置动画状态  
+      // 下面的代码仅用于演示如何重新加载div的内容  
+      var clone = galleryDiv.cloneNode(true); // 创建div的深拷贝  
+      galleryDiv.parentNode.replaceChild(clone, galleryDiv); // 用拷贝替换原div  
+  
+      // 如果您只是想重置动画，可以尝试以下方法（假设动画类名为'animated'）  
+      // animatedImg.classList.remove('animated-img'); // 移除动画类名  
+      // setTimeout(function() {  
+      //   animatedImg.classList.add('animated-img'); // 重新添加动画类名以触发动画（如果需要的话）  
+      // }, 100); // 延迟一小段时间以避免立即触发动画（根据需要调整）  
+    });  
+  });  
+</script> 
+</body>  
+</html>
