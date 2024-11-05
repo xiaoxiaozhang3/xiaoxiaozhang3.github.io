@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///C:/Users/os-zhanglf/Desktop/sss/dd.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .picShow {
+            margin: 0 auto;
+            padding: 5px;
+            width: 600px;
+            height: 600px;
+            border: 2px solid #999;
+        }
+
+        #bigPic {
+            width: 600px;
+            height: 400px;
+        }
+
+        #smallPic {
+            margin-top: 5px;
+        }
+
+        #smallPic img {
+            border: 1px solid #ddd;
+            padding: 2px;
+            width: 70px;
+            height: 70px;
+        }
+
+        #smallPic img.active {
+            border: 2px solid #f00;
+            padding: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picShow">
+        <img src="./dd_files/Snipaste_2024-11-05_13-51-53.png" id="bigPic">
+        <div id="smallPic">
+            <img src="./dd_files/Snipaste_2024-11-05_13-52-17.png" class="">
+            <img src="./dd_files/Snipaste_2024-11-05_13-51-53.png" class="">
+            <img src="./dd_files/Snipaste_2024-11-05_13-51-53.png" class="">
+            <img src="./dd_files/Snipaste_2024-11-05_13-51-53.png" class="">
+            <img src="./dd_files/Snipaste_2024-11-05_13-51-53.png" class="">
+            <img src="./dd_files/Snipaste_2024-11-05_13-51-53.png" class="">
+            <img src="./dd_files/Snipaste_2024-11-05_13-51-53.png" class="">
+            <img src="./dd_files/Snipaste_2024-11-05_13-51-53.png" class="active">
+        </div>
+    </div>
+
+    <script>
+        oBigPic = document.querySelector('#bigPic')
+        oSmallPic = document.querySelector('#smallPic').children
+        for (var i = 0; i < oSmallPic.length; i++) {
+            oSmallPic[i].index = i //这步可以给每张图片添加下标，可不要
+            oSmallPic[i].onmouseenter = function () {
+                for (var k = 0; k < oSmallPic.length; k++) {
+                    oSmallPic[k].classList.remove('active')
+                }
+                this.classList.add('active')
+                
+                oBigPic.src=this.src
+                //或者
+                //oBigPic.src=this.getAttribute('src')
+            }
+
+        }
+    </script>
+
+
+
+</body></html>
